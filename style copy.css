@@ -13,6 +13,8 @@
         }
 
 .set{ 
+    position: relative;
+    top: 150px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -63,3 +65,12 @@ input[id*="answer"]:checked + label + div{
     max-height: 100px;
 }
 
+.box{
+    position: relative;
+    top: 160px;
+}
+
+.line{
+    position: relative;
+    top: 155px;
+}

@@ -12,7 +12,9 @@
         color: #FFFFFF;
         }
 
-.set{ 
+.set{
+    position: relative;
+    top: 150px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -31,3 +33,13 @@
     margin: 10px;
     line-height: 5vh;
     padding-left: 10px;}
+
+.box{
+    position: relative;
+    top: 160px;
+}
+
+.line{
+    position: relative;
+    top: 155px;
+}
