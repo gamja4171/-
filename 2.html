@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SPAN id=test1_1><A  href="javascript:Open();">글 내용 펼치기</A></SPAN>
+<SPAN id=test1_2 style="DISPLAY: none"><A href="javascript:Close();">글 내용 접기</A><br />글 내용을 펼쳐야 이 부분이 보이게 됩니다. </SPAN>
+<script name=javascript>
+    function Open()
+    {
+        document.getElementById('test1_1').style.display='none';
+        document.getElementById('test1_2').style.display='';
+    }
+    function Close()
+    {
+        document.getElementById('test1_2').style.display='none';
+        document.getElementById('test1_1').style.display='';
+    }
+</script>
+
+</body>
+</html>
