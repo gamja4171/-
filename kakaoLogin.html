@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+    <link href="./css/kakaologin.css" rel="stylesheet">
     <title>login</title>
 </head>
 <body>
-    <a href="javascript:kakaoLogin();"><img src="https://blog.kakaocdn.net/dn/bYZZHh/btrfibui4Cj/DofAXcdzmQGCKkhTNUUAHk/img.png"/></a>
+    <div class="page2">
+        <div class="notty_logo">Notty</div>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="login_title">간편로그인</div>
+
+    <!-- 네이버 로그인 버튼 노출 영역 -->
+    <div id="naver_id_login" class="naver"></div>
+
+    <!-- 카카오 로그인 버튼 노출 영역 -->
+    <div class="kakao">
+        <a href="javascript:kakaoLogin();"><img src="https://blog.kakaocdn.net/dn/bYZZHh/btrfibui4Cj/DofAXcdzmQGCKkhTNUUAHk/img.png"/></a>
+    </div>
+
+    <!-- 네이버아디디로로그인 초기화 Script -->
+    <script type="text/javascript">
+        var naver_id_login = new naver_id_login("XsD4QRQ0MkXVZFJXio0i", "http://localhost:5500/naver_callback.html");
+        var state = naver_id_login.getUniqState();
+        naver_id_login.setButton("green", 3,60);
+        naver_id_login.setDomain(".service.com");
+        naver_id_login.setState(state);
+        naver_id_login.setPopup();
+        naver_id_login.init_naver_id_login();
+    </script>
+    <!-- //네이버아디디로로그인 초기화 Script -->
+
+<script type="text/javascript">
+	// 네이버 사용자 프로필 조회 이후 프로필 정보를 처리할 callback function
+	function naverSignInCallback() {
+		// naver_id_login.getProfileData('프로필항목명');
+		// 프로필 항목은 개발가이드를 참고하시기 바랍니다.
+		alert(naver_id_login.getProfileData('email'));
+		alert(naver_id_login.getProfileData('nickname'));
+		alert(naver_id_login.getProfileData('age'));
+	}
+
+
+	// 네이버 사용자 프로필 조회
+	naver_id_login.get_naver_userprofile("naverSignInCallback()");
+    </script>
+    <!-- //네이버아디디로로그인 Callback페이지 처리 Script -->
+
+
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
         
@@ -29,5 +77,8 @@
             });
         }
     </script>
+    
+
+    <div class="ad">광고</div>
 </body>
 </html>

@@ -1,0 +1,72 @@
+html {font-size: 1px;}
+body {font-size: 1rem;}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #9F9F9F;
+}
+
+.page2 {
+    padding: 15rem;
+    font-size: 32rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notty_logo {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+}
+
+.ad {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(49, 49, 49);
+    font-size: 40rem;
+    text-align: center;
+    width: 100vw;
+    height: 65rem;
+}
+
+.login_title{
+    position: relative;
+    top: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #F3F3F3;
+}
+
+.naver{
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.kakao{
+    position: relative;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
