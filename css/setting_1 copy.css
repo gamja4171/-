@@ -34,14 +34,21 @@
     line-height: 5vh;
     padding-left: 10px;}
 
-    
-.box{
-    position: relative;
-    top: 160px;
-    
-}
 
 .line{
     position: relative;
     top: 155px;
+    color: white;
+    width: 100%; 
+    size: 2;
+}
+
+.accordion{
+    position: relative;
+    top: 160px;
+    margin: 10px;
+}
+
+.accordion-item{
+    color: #D9D9D9;
 }
