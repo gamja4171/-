@@ -1,0 +1,54 @@
+.NOTTY{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;
+        }
+
+.accordion-item{
+    position: relative;
+    top: 160px;
+    margin: 15px;
+}
+
+.set{
+    position: relative;
+    top: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* .like{
+    height: 5vh;
+    background: #D9D9D9;
+    border-radius: 10px;
+    margin: 10px;
+    line-height: 5vh;
+    padding-left: 10px;} */
+
+
+.line{
+    position: relative;
+    top: 155px;
+    color: white;
+    width: 100%; 
+    size: 2;
+}
+
+.imo{
+    padding-left: 5px;
+}
